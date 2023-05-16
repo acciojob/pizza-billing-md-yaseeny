@@ -2,7 +2,7 @@ package com.driver;
 
 public class Main {
   public static void main(String[] args) {
-    com.driver.DeluxePizza dp = new com.driver.DeluxePizza(true);
+    DeluxePizza dp = new DeluxePizza(true);
     System.out.println(dp.getPrice());
     dp.addTakeaway();
     dp.addExtraCheese();
@@ -10,7 +10,7 @@ public class Main {
     System.out.println(dp.getBill());
 
 
-    com.driver.Pizza p = new com.driver.Pizza(true);
+    Pizza p = new Pizza(true);
     p.addExtraCheese();
     p.addExtraToppings();
     p.addTakeaway();

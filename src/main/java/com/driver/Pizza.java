@@ -19,6 +19,11 @@ public class Pizza {
     private int basePrice = 0;
 
 
+
+    public static void setNonVegPrice(int nonVegPrice) {
+        Pizza.nonVegPrice = nonVegPrice;
+    }
+
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         this.basePrice = isVeg ? vegPrice : nonVegPrice;
